@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Counter</string>
+    <string name="counterTV">Your counter is: </string>
+    <string name="counterBtn">Counter</string>
+    <string name="resetBtn">Reset</string>
+</resources>

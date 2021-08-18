@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aabbcc"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvcounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/counterTV"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btncounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/counterBtn"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnreset"
+        app:layout_constraintStart_toStartOf="@+id/tvcounter" />
+
+    <Button
+        android:id="@+id/btnreset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/resetBtn"
+        app:layout_constraintStart_toStartOf="@+id/tvcounter"
+        app:layout_constraintTop_toTopOf="@+id/tvcounter" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
